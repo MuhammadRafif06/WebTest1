@@ -1,8 +1,12 @@
-function hello() {
-    if(true){
-        let menyapa = 'haii broo!'
-        console.log(menyapa)
+function hello(nama, kelas) {
+    var name = 'hello, '+nama  +kelas
+    return function(){
+        console.log(name)
     }
-    console.log(menyapa)
 }
-hello()
+var leo = hello("Rafif", " 10 rpl B")
+
+
+
+leo()
+
